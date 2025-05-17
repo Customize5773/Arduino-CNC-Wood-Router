@@ -106,8 +106,6 @@ Contributions are welcome!
 4. Push to the branch: `git push origin feature/new-feature`.  
 5. Submit a pull request.  
 
-Report issues [here](https://github.com/yourusername/Arduino-CNC-Wood-Router/issues).
-
 ---
 
 ## License
