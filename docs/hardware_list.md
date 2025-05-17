@@ -83,4 +83,4 @@ List of components and tools required to build the Arduino-based CNC router for 
 ### **Notes**  
 - USD prices approximate (1 USD ≈ 15,500 IDR).  
 - Prices may vary by supplier.  
-- Check [supplier list](#suppliers-indonesia) for local sources.  
+- Check supplier list for local sources.  
