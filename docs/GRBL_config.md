@@ -1,20 +1,18 @@
-# GRBL Configuration for Wood CNC Routing  
-Berikut adalah pengaturan GRBL yang dioptimalkan untuk memotong/mengukir kayu menggunakan Arduino CNC Router.
+# GRBL Configuration for Wood Routing  
+Optimized GRBL settings for cutting/engraving wood with an Arduino CNC router.
 
 ---
 
-## **Akses Pengaturan GRBL**  
-1. Buka software CNC (Candle/UGS).  
-2. Hubungkan Arduino ke PC via USB.  
-3. Gunakan perintah `$$` untuk melihat daftar parameter.  
+## **Accessing GRBL Settings**  
+1. Open CNC software (Candle/UGS).  
+2. Connect Arduino via USB.  
+3. Use `$$` to view parameters.  
 
 ---
 
-## **Parameter Penting untuk Kayu**  
-| Parameter | Nilai | Deskripsi |  
-|-----------|-------|-----------|  
-| `$0`      | 10    | Step pulse (µs) |  
-| `$1`      | 25    | Step idle delay (ms) |  
+## **Key Parameters for Wood**  
+| Parameter | Value | Description |  
+|-----------|-------|-------------|  
 | `$100`    | 80.0  | X steps/mm (T8 lead screw) |  
 | `$101`    | 80.0  | Y steps/mm |  
 | `$102`    | 80.0  | Z steps/mm |  
@@ -24,30 +22,30 @@ Berikut adalah pengaturan GRBL yang dioptimalkan untuk memotong/mengukir kayu me
 | `$120`    | 50    | X acceleration (mm/s²) |  
 | `$121`    | 50    | Y acceleration |  
 | `$122`    | 30    | Z acceleration |  
-| `$21`     | 1     | Hard limits enabled (pastikan limit switch terpasang!) |  
+| `$21`     | 1     | Hard limits enabled |  
 | `$22`     | 1     | Homing cycle enabled |  
 
 ---
 
-## **Kalibrasi Steps/mm**  
-1. Gunakan perintah `G91` (relative positioning).  
-2. Perintahkan pergerakan 100mm: `G0 X100 F500`.  
-3. Ukur pergerakan aktual dengan caliper.  
-4. Hitung ulang steps/mm:  New steps/mm = (Old steps/mm * Commanded distance) / Actual distance
-5. Update nilai `$100`, `$101`, `$102`.  
+## **Calibration Guide**  
+1. Use `G91` (relative positioning).  
+2. Command movement (e.g., `G0 X100 F500`).  
+3. Measure actual movement with calipers.  
+4. Recalculate steps/mm:  New steps/mm = (Old steps/mm × Commanded distance) ÷ Actual distance
+5. Update value `$100`, `$101`, `$102`.
 
 ---
 
-## **Homing & Limit Switch**  
-- **Koordinat Home**: `G28` (semua sumbu kembali ke titik nol).  
-- **Posisi Limit Switch**:  
-- X: Ujung kiri  
-- Y: Ujung belakang  
-- Z: Posisi tertinggi  
+**Homing & Limit Switch**
+- **Home coordinates**: `G28` (all axes return to zero point).
+- **Limit Switch Position**:
+- X: Left end
+- Y: Back end
+- Z: Highest position
 
 ---
 
-## **Tips untuk Kayu**  
-- **Feed Rate**: 500–1200 mm/min (sesuaikan kekerasan kayu).  
-- **Kedalaman Potong**: 2–5mm per pass.  
-- **Pendinginan**: Aktifkan kipas spindle untuk hindari overheating.  
+**Tips for Wood**
+- **Feed Rate**: 500-1200 mm/min (adjust wood hardness).
+- **Cut Depth**: 2-5mm per pass.
+- Cooling**: Activate the spindle fan to avoid overheating.
