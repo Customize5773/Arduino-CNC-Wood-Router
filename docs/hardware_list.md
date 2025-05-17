@@ -4,40 +4,37 @@ List of components and tools required to build the Arduino-based CNC router for 
 ---
 
 ## **Electronics**  
-| Part | Description | Qty | Unit Price (IDR) | Total (IDR) |  
-|------|-------------|-----|------------------|-------------|  
-| **Arduino Uno R3** | CH340 clone (USB compatible) | 1 | 120,000 | 120,000 |  
-| **CNC Shield V3** | GRBL-compatible expansion board | 1 | 85,000 | 85,000 |  
-| **NEMA 17 Stepper Motor** | 1.8°, 1.2–1.7A, 12–24V (e.g., 17HS4401) | 3 | 150,000 | 450,000 |  
-| **A4988 Stepper Driver** | Stepstick module (for CNC Shield) | 3 | 25,000 | 75,000 |  
-| **24V 10A Power Supply** | Switching PSU for motors/spindle | 1 | 250,000 | 250,000 |  
-| **Limit Switches** | Mechanical endstop (KW12-3) | 3 | 12,000 | 36,000 |  
-| **775 DC Spindle Motor** | 12–24V, 10,000 RPM (with ER11 collet) | 1 | 150,000 | 150,000 |  
-| **Jumper Wires** | Dupont cables (male-to-female) | 1 set | 30,000 | 30,000 |  
-| **Terminal Blocks** | For power connections | 5 | 5,000 | 25,000 |  
+| Part | Description | Qty | Unit Price (IDR) | Unit Price (USD) |  
+|------|-------------|-----|------------------|------------------|  
+| **Arduino Uno R3** | CH340 clone | 1 | 120,000 | $8 |  
+| **CNC Shield V3** | GRBL-compatible | 1 | 85,000 | $6 |  
+| **NEMA 17 Stepper** | 1.8°, 1.2–1.7A | 3 | 150,000 | $10 |  
+| **A4988 Driver** | Stepstick module | 3 | 25,000 | $1.7 |  
+| **24V 10A PSU** | Switching power supply | 1 | 250,000 | $17 |  
+| **Limit Switches** | Mechanical endstop | 3 | 12,000 | $0.8 |  
+| **775 DC Spindle** | 10,000 RPM | 1 | 150,000 | $10 |  
+| **Jumper Wires** | Dupont cables | 1 set | 30,000 | $2 |  
 
 ---
 
 ## **Mechanical Parts**  
-| Part | Description | Qty | Unit Price (IDR) | Total (IDR) |  
-|------|-------------|-----|------------------|-------------|  
-| **Linear Rail MGN12** | 400mm (X-axis), 300mm (Y-axis) | 2 | 150,000 | 300,000 |  
-| **MGN12H Carriage** | Linear bearing block | 4 | 45,000 | 180,000 |  
-| **T8 Lead Screw** | 4mm pitch, 300mm length (anti-backlash) | 2 | 75,000 | 150,000 |  
-| **Flexible Coupler** | 5mm to 8mm (motor-to-screw) | 3 | 15,000 | 45,000 |  
-| **LM8UU Bearings** | For smooth rods (alternative to MGN12) | 8 | 10,000 | 80,000 |  
-| **8mm Smooth Rod** | 500mm length (if not using MGN12 rails) | 3 | 50,000 | 150,000 |  
-| **Spindle Mount Bracket** | 3D-printed or aluminum | 1 | 50,000 | 50,000 |  
+| Part | Description | Qty | Unit Price (IDR) | Unit Price (USD) |  
+|------|-------------|-----|------------------|------------------|  
+| **Linear Rail MGN12** | 400mm (X-axis) | 1 | 150,000 | $10 |  
+| **MGN12H Carriage** | Linear bearing | 4 | 45,000 | $3 |  
+| **T8 Lead Screw** | 4mm pitch, 300mm | 2 | 75,000 | $5 |  
+| **Flexible Coupler** | 5mm-8mm | 3 | 15,000 | $1 |  
+| **LM8UU Bearings** | For smooth rods | 8 | 10,000 | $0.7 |  
 
 ---
 
 ## **Frame Materials**  
-| Part | Description | Qty | Unit Price (IDR) | Total (IDR) |  
-|------|-------------|-----|------------------|-------------|  
-| **Plywood (12mm)** | 120cm x 240cm sheet (cut to size) | 1 | 200,000 | 200,000 |  
-| **M5 Bolts/Nuts** | 20mm–50mm lengths | 50 | 500 | 25,000 |  
-| **T-Nuts & Brackets** | For aluminium extrusion frames | 20 | 3,000 | 60,000 |  
-| **Aluminium Extrusion** | 2020 profile (1m length) | 4 | 100,000 | 400,000 |  
+| Part | Description | Qty | Unit Price (IDR) | Unit Price (USD) |  
+|------|-------------|-----|------------------|------------------|  
+| **Plywood (12mm)** | 120cm x 240cm | 1 | 200,000 | $13 |  
+| **M5 Bolts/Nuts** | 20mm–50mm | 50 | 500 | $0.03 |  
+| **Aluminium Extrusion** | 2020 profile (1m) | 4 | 100,000 | $7 |  
+
 
 ---
 
@@ -63,12 +60,11 @@ List of components and tools required to build the Arduino-based CNC router for 
 ---
 
 ## **Total Estimated Cost**  
-| Category | Total (IDR) |  
-|----------|-------------|  
-| Electronics | 1,221,000 |  
-| Mechanical | 955,000 |  
-| Frame | 200,000 (wood) / 400,000 (aluminium) |  
-| **Grand Total** | **~2.3–2.8 million** |  
+- **Electronics:** ~Rp 1,221,000 (**$82**)  
+- **Mechanical:** ~Rp 955,000 (**$64**)  
+- **Frame (Wood):** ~Rp 200,000 (**$13**)  
+
+**Grand Total:** ~Rp **2.3–2.8 million** (**$155–$190**)  
 
 ---
 
@@ -83,8 +79,8 @@ List of components and tools required to build the Arduino-based CNC router for 
 
 ---
 
-## **Notes**  
-- **Cost-Saving Tips**:  
-  - Use **smooth rods + LM8UU bearings** instead of linear rails.  
-  - Source second-hand stepper motors.  
-- **Safety**: Double-check wiring and secure all mechanical connections before powering on.  
+
+### **Notes**  
+- USD prices approximate (1 USD ≈ 15,500 IDR).  
+- Prices may vary by supplier.  
+- Check [supplier list](#suppliers-indonesia) for local sources.  
