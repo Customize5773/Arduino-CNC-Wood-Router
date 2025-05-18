@@ -64,7 +64,7 @@ A low-cost, open-source CNC router for woodworking, powered by **Arduino Uno** a
    - Compile and upload to Arduino.
 
 3. **Configure GRBL**:
-   - Adjust steps/mm and acceleration in [`config.h`](src/cnc_controller/config.h).
+   - Adjust steps/mm and acceleration in [`config.h`](src/cnc-controller/config.h).
    - Upload settings via `$$` commands in CNC software.
 
 ---
