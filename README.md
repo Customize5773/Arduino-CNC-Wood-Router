@@ -5,6 +5,9 @@
 
 A low-cost, open-source CNC router for woodworking, powered by **Arduino Uno** and **GRBL firmware**. Designed for cutting, engraving, and prototyping on wood, MDF, and acrylic.
 
+![home-made-cnc-router](https://github.com/user-attachments/assets/8cbeabe3-ba70-4162-a8bf-8df84fd56445)
+> Source: [hackaday.com](https://hackaday.com/2014/06/27/building-a-wood-cnc-router-from-scratch/)
+
 ---
 
 ## Table of Contents
